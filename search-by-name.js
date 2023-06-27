@@ -12,8 +12,12 @@
 const catNames = ['Cirmi', 'Cirmos', 'Vakarcs', 'Butyok', 'Bubu']
 
 function main(keyword) {
-    console.log('keyword:', keyword)
-    // Tip: string.prototype.includes()
+    catNames.forEach((cat) => {
+        const string = keyword.toLowerCase();
+       if (cat.toLowerCase().includes(string)){
+           console.log(cat)
+       } 
+    })
 }
 
 main(process.argv[2])
