@@ -18,9 +18,6 @@ function main(keyword) {
         ? console.log(cat)
         : null
     })
-    // console.log('keyword:', keyword)
-
-    // Tip: string.prototype.includes()
 }
 
 main(process.argv[2])
