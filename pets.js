@@ -12,7 +12,7 @@ const pets = ['Cat', 'Dog', 'Hamster', 'Guinea Pig', 'Salmon']
 
 function main() {
     pets.forEach((pet, index) => {
-        console.log(index+1, pet)
+        console.log( `${index+1}. ${pet}`)
     })
 }
 
