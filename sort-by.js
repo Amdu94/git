@@ -58,6 +58,18 @@ function main(sortBy) {
   dogs.map((dog) => {
     console.log(dog.name);
   })
+ }else if (sortBy === 'name'){
+  let sort = dogs.sort(function (a, b) {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  })
+    console.log('sortBy:', sortBy)
+    console.log(sort);
  }
 }
 
