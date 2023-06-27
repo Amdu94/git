@@ -68,8 +68,9 @@ function main(sortBy) {
     }
     return 0;
   })
-    console.log('sortBy:', sortBy)
-    console.log(sort);
+  sort.map((dog) => {
+    console.log(dog.name);
+  })
  }
 }
 
